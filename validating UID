@@ -1,0 +1,8 @@
+import re
+T=int(input())
+for i in range(T):
+    s=input()
+    if(re.match(r'^(?=(?:.*[A-Z]){2})(?=(?:.*[0-9]){3})(?:([a-zA-Z0-9])(?!.*\1)){10}$',s)):
+        print('Valid')
+    else:
+        print('Invalid')
